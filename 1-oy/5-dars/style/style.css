@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+    background-color: red;
+    background-color: rgba(255, 100, 100,1);
+    background-color: #5A3333 ; 
+}
+div{
+    /* background-image: url('../img/bg.jpg'),url('../img/bg.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right;
+    background-position-y: center; */
+     /* background-position: left top, right bottom;  */
+    /* background-size: cover; */
+    /* background-attachment: scroll,fixed; */
+    /* background-color: royalblue; */
+    height: 100vh;
+    background: url('../img/bg.jpg') no-repeat left top scroll;
+    border: 2px solid red;
+    overflow: hidden;
+
+}
+ input{
+    /*border-bottom-color: green;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-top: 5px solid red;   solid,dashed,dotted,double*/
+    border: 2px solid green;
+    border-radius: 50%;
+}
+p{
+    border:5px solid black;
+}

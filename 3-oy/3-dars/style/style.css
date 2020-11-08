@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import 'normal.css';
+
+.buttonforscroll{
+    position: absolute;
+    top:500px;
+    left:1200px;
+    background:red;
+}
+
+
+.polosa{
+    margin:0 auto;
+    width: calc(64px * 3);
+    height: 64px;
+    overflow: hidden;
+    background: pink;
+    border-radius: 20px;
+
+}
+.item{
+     width: calc(64px * 7);
+    position: relative;
+    transition: left .3s;
+    left:0;
+}
+.polosa img{
+    float: left;
+}
+.btn{
+    position: absolute;
+    top:2150px;
+   
+}
+.btn-left{
+    left:520px;
+}
+.btn-right{
+    left:800px;
+}
+#block{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+    background: orange;
+}

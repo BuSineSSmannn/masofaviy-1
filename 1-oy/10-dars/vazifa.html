@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vazifa</title>
+    <style>
+
+*{
+	text-decoration: none;
+	list-style: none;
+}	
+
+        .container{
+            width: 95%;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        #menu{
+            background-color: red;
+            text-align: center;
+            
+        }
+        #menu > li {
+            float: left;
+            width: 20%;
+        }
+        #menu li{
+            background: black;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #menu > li:hover {
+            background: #1260EC;
+        }
+
+
+        #menu li li{
+            display: none;
+        }
+        #menu li:hover li {
+            display: block;
+
+        }
+        #menu li li a:hover,
+        #menu li:first-child:hover {
+        	background: green;
+        }
+        #menu li:hover{
+            transform: scale(1.2);
+        }
+
+        #menu li a{
+            display: block;
+            color:white;
+            
+
+        }
+
+        #menu a{
+            color:#fff;
+        }
+
+        .podrazdel{
+            padding-inline-start:0;
+            border-top:1px solid #2980b9;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <ul id="menu">
+            <li>
+                <a href="">Main</a>
+            </li>
+            <li>
+               <a href="">Portfolio</a>
+               <ul class="podrazdel">
+                  <li><a href="">Lorem ipsum </a></li>
+                  <li><a href="">Lorem ipsum </a></li>
+                  <li><a href="">Lorem ipsum </a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">News</a>
+               <ul class="podrazdel">
+                  <li><a href="">Lorem ipsum.</a></li>
+                  <li><a href="">Lorem ipsum.</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">About</a>
+               <ul class="podrazdel">
+                  <li><a href="">Lorem.</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Contact</a>
+               <ul class="podrazdel">
+                  <li><a href="">Lorem ipsum.</a></li>
+                  <li><a href="">Lorem ipsum.</a></li>
+                  <li><a href="">Lorem ipsum.</a></li>
+               </ul>
+            </li>
+         </ul>
+    </div>
+</body>
+</html>

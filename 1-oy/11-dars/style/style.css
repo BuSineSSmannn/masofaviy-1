@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import 'normal.css';
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+.banner{
+    background: url('../img/background.jpg') no-repeat center top / cover;
+    padding-bottom: 230px;
+}
+nav{
+    padding-top: 20px;
+}
+nav > img{
+    width: 60px;
+}
+menu{
+    float: right;
+}
+menu li{
+    display: inline-block;
+    margin-left: 50px;
+}
+menu a{
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+menu > li:hover{
+    border-bottom: 3px solid #fce38a;
+    padding-bottom: 10px;
+}
+menu a:hover{
+    color:#fce38a;
+    cursor: pointer;
+}
+header{
+    margin-top: 170px;
+    text-align: center;
+
+}
+header::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin: 0 auto 60px;
+
+}
+h1 span{
+    color:silver;
+}
+h1{
+    text-transform: uppercase;
+    line-height: 140px;
+    font-size: 150px;
+    font-weight: normal;
+    margin-top: 50px;
+}
+h2{
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.nav_button{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav_button a{
+    border:3px solid #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav_button:hover a{
+    background-color: white;
+    color: red;
+}
+h3{
+    font-size: 48px;
+    font-weight: normal;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+h4{
+    font-size: 24px;
+    font-weight: normal;
+    color:#333;
+}
+.title{
+    text-align: center;
+    padding-top: 85px;
+}
+
+.title::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: red;
+    display: block;
+    margin: 0 auto 60px;
+}
+
+.aboutus p{
+    text-align: center;
+    color:#999;
+    width: 970px;
+    margin: 45px auto 95px;
+    font-size: 15px;
+    line-height: 24px;
+}
+.aboutus__images{
+    margin:0 auto 85px;
+    text-align: center;
+
+}
+.aboutus__images img{
+    margin-right: 25px;
+    width: 375px;
+}
+.aboutus__images img:last-child{
+    margin-right: 0;
+}
+.services_items{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 60px auto 0;
+}
+.services_item{
+    display: inline-block;
+    text-align: center;
+    margin-right: 70px;
+    margin-top: 20px;
+}
+.item_icon{
+    display: inline-block;
+    margin-right: 20px;
+}
+.item__title{
+    font-size: 15px;
+    line-height: 24px;
+    color:#999;
+    width: 280px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+.item__title p{
+    margin: 0;
+}
+h5{
+    font-size: 14px;
+    color:#333;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1000px){
+    /* body{
+        background-color: red;
+    } */
+}
+
+@media screen and (max-width:360px){
+    .banner{
+        padding-bottom: 30px;
+    }
+    .container{
+        width: 350px;
+    }
+    nav > img{
+        margin:0 auto;
+        text-align: center;
+        display: block;
+    }
+    menu li {
+        display: block;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    menu{
+        float: none;
+        margin:0 auto;
+        text-align: center;
+        padding-inline-start: 0;
+    }
+
+    .aboutus p{
+        text-align: center;
+        color:#999;
+        width: 200px;
+        margin: 45px auto 95px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .aboutus__images img{
+        margin-right: 25px;
+        width: 340px;
+    }
+
+    h1{
+        line-height: 15px;
+        font-size: 20px;
+        word-wrap: normal;
+        margin-top:10px;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+
+    header{
+        margin-top:50px;
+    }
+    .nav_button{
+        width: 60px;
+    }
+    .nav_button a{
+        font-size: 9px;
+        padding: 5px 3px;
+    }
+
+    header::after{
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media print{
+    body{
+        background-color: yellow;
+    }
+}

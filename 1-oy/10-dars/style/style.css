@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@keyframes exampleAnimation{
+    0%{
+    background-color: red;
+    opacity: 1;
+    display: block;
+
+    }
+    25%{
+        background-color: rgb(47, 0, 255);
+        width: 300px;
+        transform: translate(-50px,-50px);
+        opacity: 0.5;
+
+
+
+    }
+    50%{
+        display: none;
+        background-color: yellow;
+        width: 400px;
+        transform: translate(100px,100px);
+        opacity: 1;
+
+    }
+    75%{
+        background-color: rgb(47, 0, 255);
+        width: 300px;
+        transform: translate(-50px,-50px);
+        opacity: 0.5;
+
+
+    }
+    100%{
+        background-color: red;
+        opacity: 1;
+
+    }
+}
+
+
+
+#block1{
+    width: 200px;
+    height: 200px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 50%);
+}
+
+#block2,#block3{
+    margin-left: 50px;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    animation-name: exampleAnimation;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+#block2:hover,
+#block3:hover{
+ 
+
+}

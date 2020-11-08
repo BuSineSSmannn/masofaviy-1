@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork</title>
+</head>
+<body>
+    
+    <script>
+            // let a = -1;
+            // if( a == 0) console.log('Верно');
+            // else console.log('Не верно');
+            //  a = 0;
+            // if(a === '1' ) console.log('Верно');
+            // else console.log('Не верно');
+            // let test = true;
+
+            // if(test != true) console.log('Верно');
+            // else console.log('Не верно');
+
+            // if(a > 0 && a < 5 )console.log('Верно');
+            // else console.log('Не верно');
+
+            // let a = 5;
+            // if(a == 0 || a == 2) a+=7;
+            // else a/=10;
+
+            // console.log(a);         
+            let a = 1;
+            let b = 2;
+            let summa = 0;
+            if(a <= 1 && b >= 3 )  summa = a + b;
+            else summa = a - b;
+            console.log(summa);
+
+            a = 2;
+            b = 5;
+            if( (a > 2 && a < 11) || (b >=6 && b < 14))console.log('Верно');
+            else console.log('Не верно');
+
+            let num = 1, result;
+            result = 1;
+
+            switch(num){
+                case 1:
+                result = 'Зима';
+                break;
+                case 2: 
+                result = 'Весна';
+                break;
+                case 3: 
+                result = 'Лето';
+                break;
+                default:
+                result = 'Осень';
+            }
+
+            let mothDay = 2;
+            let dekada;
+           if(mothDay >= 1 && mothDay <= 10) dekada = 'Первая декада';
+           else if(mothDay >= 11 && mothDay <= 20) dekada = 'Вторая декада';
+           else if(mothDay >= 21 && mothDay <= 31) dekada = 'Третья декада';
+            else dekada = 'Чё за декада?';
+
+           let  mothNumber = 2;
+            switch(mothNumber){
+                case 1:
+                case 2:
+                case 12:
+                    result = 'Зима';
+                break;
+                case 3:
+                case 4:
+                case 5:
+                    result = 'Весна';
+                break;
+                case 6: 
+                case 7: 
+                case 8: 
+                    result = 'Лето';
+                break;
+                default:
+                    result = 'Осень';
+            }
+            console.log(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import (less) '__vars';
+.bg(@color:yellow){
+    background-color: @color;
+}
+
+.bg(@color,@cursor){
+    color:@color;
+    cursor: @cursor;
+}
+.bg(@c1,@c2,@c3){
+    border:1px solid @c1;
+    overflow: @c2;
+    transform: @c3;
+}
+
+.border(@px:1px,@style:solid,@color:black){
+    border:@arguments;
+}
+.tshw(@c1,@c2,@c3,@c4){
+    text-shadow: @arguments;
+}
+
+.btn(){
+    background-color:red;
+    width: 200px;
+    border: none;
+    border:1px solid red;
+    &:hover{
+        background-color:yellow;
+        cursor: pointer;
+    }
+    &:active{
+        background-color: pink;
+        cursor: pointer;
+    }
+}
+
+// @{s}{
+//     color:@@yellow;
+//     .div;
+//     transform: translate(255);
+// }
+// div{
+//     background-color: @prem;
+//     @{c}:green;
+//     box-shadow: 20px 17px 1px @rgbared;
+// }
+// .test2{
+//     background-@{c}: @prem;
+//     @{fz}:17px;
+
+//     .div;
+//     &__active:hover{
+//         background-color: yellowgreen;
+//         & span{
+//             display: none;
+//             .mixin;
+//         }
+//     }
+//     &:active{
+//         background-color: pink;
+//     }
+// }
+
+// .new{
+//     .bg(red,pointer);
+// }
+// .kakoyto_class{
+//     .bg();
+// }
+// .class3{
+//     .bg(yellow,pointer,translateX(200px));
+// }
+// .votclass{
+//     .border(2px,dashed,green);
+//     .tshw(1px,1px,10px,red);
+// }
+// .button{
+//     width: 100px + 10px;
+//     color: #fff - #111;
+//     color: 50 / 10px;
+//     .btn();
+// }
+// .vlojniyclass .eweclass .btn{
+//     .btn();
+// }
+
+
+div{
+    padding: 10px ;
+    margin: 10px;
+    &:hover{
+        font-weight: bold;
+    }
+    & .test2{
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+.ewebutton{
+   .btn();
+   &:extend(div,div:hover);
+}
+.test{
+    &:extend(.ewebutton,.ewebutton:hover,.ewebutton:active,div .test2,.birpalo all);
+    visibility: hidden;
+}
+
+
+
+.birpalo{
+    border:1px solid red;
+    color:red;
+
+}
+
+div .birpalo{
+    font-weight: bold;
+}
+.birpalo a:hover{
+    color:yellow;
+} 
+
+.wrapper{
+    margin:0 auto;
+    width: ~"50px + 10px";
+    .border();
+}

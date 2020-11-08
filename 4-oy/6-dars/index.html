@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        
+        .container{
+            /* padding:0; */
+            box-sizing: border-box;
+            border:1px solid red;
+        }
+/*        
+        [class^='col']{
+            background-color: silver;
+            border:1px solid black;
+        } */
+
+   
+                
+ 
+       
+
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+       
+
+
+        <div class="row">
+            <div class="col-md-3 order-md-2">content</div>     
+            <div class="col-md-6 order-md-1">sidebar1</div>
+            <div class="col-md-3 order-md-3">sidebar2</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 ">Content</div>
+            <div class="col-md-3 ">Sidebar 2</div>
+            <div class="col-md-6 order-md-first">Sidebar 1</div>
+        </div>
+
+   
+        <h2>Отступы</h2>
+        <div class="row">
+            <div class="col-md-4">1</div>
+            <div class="col-md-4 offset-md-8">2</div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-4 offset-md-11">1</div>
+        </div> -->
+        <div class="row mt-5">
+            <div class="col-md-10 ml-auto mr-auto">Header1</div>
+        </div>
+
+
+        <div class="row mt-3 text-lg-center">
+            <div class="col-md-10 ml-auto mr-auto">Header2</div>
+
+            <div class="w-100">
+   
+
+            </div>
+            <div class="col-md-10 mr-auto ml-auto">
+
+                <p class="text-primary ">.text-primary</p>
+                <p class="text-secondary">.text-secondary</p>
+                <p class="text-success bg-light">.text-success</p>
+                <p class="text-danger">.text-danger</p>
+                <p class="text-warning">.text-warning</p>
+                <p class="text-info">.text-info</p>
+                <p class="text-light bg-info">.text-light</p>
+                <p class="text-dark">.text-dark</p>
+                <p class="text-muted">.text-muted</p>
+                <p class="text-white bg-dark">.text-white</p>
+                <div class="p-3 mb-2 bg-dark text-white d-none d-md-block ">Display chototo</div>
+            </div>
+            
+        </div>
+        <br>
+        <div class="row">
+            <!-- <img src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" class="img-fluid" alt="Responsive image"> -->
+            <div class="col-md-10">
+                <img src="https://codelife.uz/img/client.png" class="img-fluid" alt="Responsive image">
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-10">
+                <img src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" class="img-fluid float-left img-thumbnail" alt="..." width="200">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veniam omnis nihil enim nobis soluta nulla autem quam voluptate fuga?</p>
+            </div>
+            <div class="col-2 text-center">
+                    <img src="https://codelife.uz/img/client.png" class="rounded fluid" alt="..." width="100px">
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <table class="table  table-borderless  table-hover table-secondary table-striped  " >
+                <caption>List of users</caption>
+    
+                <thead class="thead-dark ">
+                  <tr >
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody class="text-success">
+                  <tr class="">
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Фамилия</th>
+                    <th scope="col">Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+
+              
+              <div class="table-responsive-lg">
+
+           
+                <table class="table ">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Heading</th>
+                      <th scope="col">Heading</th>
+                      <th scope="col">Heading</th>
+                      <th scope="col">Heading</th>
+                      <th scope="col">Heading</th>
+                      <th scope="col">Heading</th>
+                      <th scope="col">Heading</th>
+                      <th scope="col">Heading</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                      <td>Cell</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

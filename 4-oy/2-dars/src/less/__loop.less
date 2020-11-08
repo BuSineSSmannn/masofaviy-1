@@ -1,0 +1,19 @@
+@import (less) '__vars';
+.myloopmixin(@i) when (@i<=5){
+    width: @i * 50px;
+    .myloopmixin(@i + 1);
+}
+
+.bootsrap(@n,@name,@i:1) when (@i<=12){
+    .col-@{name}-@{i}{
+        width: 100% * @i / @n;
+    }
+    .bootsrap(@n,@name,@i + 1);
+}
+
+.bootsrap(12,xs);
+.bootsrap(12,lg);
+
+.new{
+   
+}

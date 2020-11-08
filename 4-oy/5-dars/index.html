@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        
+        .container{
+            padding:0;
+            box-sizing: border-box;
+        }
+       
+        /* [class^='col']{
+            background-color: silver;
+            border:1px solid black;
+        } */
+       
+        .flex-cols{
+            height: 100px;
+            background-color: pink;
+            border:1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="row">
+            
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+        </div>
+
+        <div class="row mt-5">
+            
+            <div class="col-md-4 col-sm-6 col-lg-3">1</div>
+            <div class="col-md-4 col-sm-6  col-lg-6">2</div>
+            <div class="col-md-4 col-sm-12 col-lg-3">3</div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12 col-sm-6">Header</div>
+            <div class="col-md-2 col-sm-6 ">left SideBar</div>
+            <div class="col-md-8 ">Content</div>
+            <div class="col-md-2">right SideBar</div>
+            <div class="col-md-12">footer</div>
+        </div>
+            
+            
+
+        <div class="row mt-5">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="w-100"></div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+        </div>
+
+
+        <div class="row mt-r">
+            <div class="col-auto">t</div>
+            <div class="col-auto">tasdasdsad</div>
+            <div class="col">1</div>
+            <div class="col">2</div>
+        </div>
+      
+        <div class="row no-gutters">
+            <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="" class="col-12 col-sm-6 col-md-4 col-lg-2">
+        </div>
+           
+        
+       <div class="row align-items-start flex-cols">
+        <div class="col-lg-2 col-md-4">1</div>
+        <div class="col-lg-8 col-md-4">2</div>
+        <div class="col-lg-2 col-md-4">3</div>
+        </div>
+        <br>
+        <div class="row align-items-center flex-cols">
+            <div class="col-lg-2 col-md-4">1</div>
+            <div class="col-lg-8 col-md-4">2</div>
+            <div class="col-lg-2 col-md-4">3</div>
+        </div>     
+        <br>
+        <div class="row align-items-end flex-cols">
+            <div class="col-lg-2 col-md-4">1</div>
+            <div class="col-lg-8 col-md-4">2</div>
+            <div class="col-lg-2 col-md-4">3</div>
+       </div>  
+       <br> 
+       <div class="row  flex-cols">
+        <div class="col-lg-2 col-md-4 align-self-start">1</div>
+        <div class="col-lg-8 col-md-4 align-self-end">2</div>
+        <div class="col-lg-2 col-md-4 align-self-center">3</div>
+        </div>
+        <br>
+        <div class="row flex-cols justify-content-start ">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>  
+        <br>
+        <div class="row flex-cols justify-content-end ">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>  
+        <br>
+        <div class="row flex-cols justify-content-center ">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>  
+
+        <div class="row flex-cols justify-content-around ">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>  
+        <div class="row flex-cols justify-content-between ">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>  
+        <div class="row flex-cols justify-content-evenly ">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>  
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

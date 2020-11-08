@@ -1,0 +1,152 @@
+@import 'mixins/vars';
+@import 'mixins/mixins';
+@import 'mixins/media';
+@import 'mixins/functions';
+@include google-font-load('Roboto');
+@include google-font-load('Piazzolla');
+
+@for $i from 1 through 10 {
+    .col-x-#{$i}{
+        width: 100px / $i;
+    }
+}
+
+$pupils: Xushnudbek,Diyorbek,Boburmirzo,Fayzullo,Farangiz;
+
+@each $pupil in $pupils {
+    .#{$pupil}-profile{ 
+        @if($pupil != Xushnudbek and $pupil != Diyorbek ){
+            color:silver;
+        }
+        @else if($pupil == Farangiz){
+            color:red;
+        }
+        @else{
+            color:green;
+        }
+    }
+}
+
+$i:1;
+
+
+@while $i <=10 {
+ 
+
+    @if($i % 2  == 1){
+        .whilte-#{$i}{
+            background-color: green;
+        }
+    }@else{
+        .white-#{$i}{
+            background-color: white;
+        }
+    }
+
+    $i: $i + 1;
+}
+
+.qanaqadur{
+    @if(5 > 3){
+        color:red;
+    } 
+    @else if($dev == jayson2){
+        color:pink;
+    }
+    @else {
+        red:green;
+    }
+}
+
+
+%color-ex{
+    width: 100% !important;
+}
+.ext1{
+    border:1px solid red;
+    color:red;
+    background-color: red;
+}
+
+.ext2{
+    @extend .ext1;
+    font-size: 14px;
+    @extend %color-ex;
+}
+.ext3{
+    @extend .ext1;
+    @extend %color-ex;
+}
+
+
+button{
+    background-color: $mycolor;
+    &:hover{
+        background-color: darken($mycolor,15%);
+        font-size: px-to-em(50px);
+    }
+}
+
+body{
+
+
+    // font-size: $var;
+    // font-weight: bold;
+    // font-family: 'Courier New', Courier, monospace;
+    // font-style: italic;
+    font: {
+        size: $var;
+        weight: bold;
+        family: 'Arial,san-serif';
+        style: italic;
+    }
+    background-#{$p}: red;
+    @include large-screen{
+        background-color: yellow;
+        color:red;
+    }
+    @include mobile-screen{
+        background-color: pink;
+        a{
+            color:yellow;
+        }
+    }
+}
+
+// .test{
+//     background-color: yellow;
+//     color:red;
+// }
+.test2{
+    @include mymixin;
+    font-weight: bold;
+}
+.test14{
+    @include mymixin;
+}
+
+@include link-color;
+.myclass2{
+    // @include mymixin;
+    @include test;
+    font-size: 10px;
+    @include link-color;
+}
+.class3{
+    @include rounded(50px,1px solid red);
+}
+
+
+.myclass4{
+    @include shadow(1px,2px,50px,yellow)
+}
+
+ul{
+    @include apply-li(red){
+      
+            list-style: none;
+            border:1px solid red;
+            
+        
+    }
+}

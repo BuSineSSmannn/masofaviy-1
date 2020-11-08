@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import "normal.css";
+#box{
+    width: 200px;
+    height: 300px;
+    /* background-color: aqua; */
+    margin-left: 100px;
+    box-shadow: 20px 20px 20px yellow,30px 40px 20px red,30px 50px 20px blue;
+    transform: skewX(5deg);
+    transform: skewY(5deg);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition: linear 1s transform 0.5s;
+}
+#box:hover{
+
+    transform: translate(2px,3px) rotate(90deg);
+    transform: scale(1.2);
+}
+a:hover{
+    transform: rotate(90deg);
+    transform: scale(1.2,2);
+    transform: scaleX(1.2);
+}
+a{
+    display: block;
+    text-shadow: 20px 20px 1px red;
+}
+
+
+img{
+    
+}
+img:hover{
+    transform: rotate(180deg);
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #block{
+            width: 300px;
+            height: 300px;
+            border:5px solid red;
+            background-color: orange;
+        }
+        textarea{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+   All corners: <input id="all-corners" type="range" step="1" value="1"><br>
+   Left top corner: <input id="left-top-corner" type="range" step="1" value="1"><br>
+   Right top corner: <input id="right-top-corner" type="range" step="1" value="1"><br>
+   Left bottom corner: <input id="left-bottom-corner" type="range" step="1" value="1"><br>
+   Right bottom corner: <input id="right-bottom-corner" type="range" step="1" value="1"><br>
+   <label for="color">Color:</label>
+
+    <select id="color">
+        <option value="black">Black</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="red" selected>Red</option>
+    </select>
+
+    <label for="style">Style:</label>
+
+   
+    <select id="style">
+        <option value="solid">Solid</option>
+        <option value="dashed">Dashed</option>
+        <option value="dotted">Dotted</option>
+        <option value="double" selected>Double</option>
+    </select>
+
+    Color (RGB):<input type="color" value="#000" id="rgbcolor">
+    <div>
+        <div id="block" style="display:inline-block;">
+       
+        </div>
+        <textarea name="" id="outputcode" cols="30" rows="20" ></textarea>
+    </div>
+   <script>
+       let $outputBlock = document.querySelector('#block');
+       let $leftTopCorner = document.querySelector('#left-top-corner');
+       let $allCorners =  document.querySelector('#all-corners');
+       let $rightTopCorner = document.querySelector('#right-top-corner');
+       let $leftBottomCorner = document.querySelector('#left-bottom-corner');
+       let $rightBottomCorner = document.querySelector('#right-bottom-corner');
+       let $outputcode = document.querySelector('#outputcode');
+       let $color = document.querySelector('#color');
+       let $style = document.querySelector('#style');
+       let $rgbcolor = document.querySelector('#rgbcolor');
+    
+
+
+       $outputcode.value = `-webkit-border-radius: ${$allCorners.value}px ${$style.value} ${$color.value};\n-moz-border-radius: ${$allCorners.value}px ${$style.value} ${$color.value};\n-o-border-radius: ${$allCorners.value}px ${$style.value} ${$color.value};\nborder-radius: ${$allCorners.value}px ${$style.value} ${$color.value};\n`;
+
+
+     
+       
+        $allCorners.addEventListener('input',function(e){
+        
+            $outputBlock.style.borderRadius = this.value + 'px';
+            $leftTopCorner.value = this.value;
+            $leftBottomCorner.value = this.value;
+            $rightTopCorner.value = this.value;
+            $rightBottomCorner.value = this.value;
+            $outputcode.value = `-webkit-border-radius: ${this.value}px ${$style.value} ${$color.value};\n-moz-border-radius: ${this.value}px ${$style.value} ${$color.value};\n-o-border-radius: ${this.value}px ${$style.value} ${$color.value};\nborder-radius: ${this.value}px; ${$style.value} ${$color.value}\n`;
+       });
+            $color.addEventListener('change',function(e){
+                $outputBlock.style.borderColor = this.value ;
+               
+            $outputcode.value = `-webkit-border-radius: ${$allCorners.value}px ${$style.value} ${this.value};\n-moz-border-radius: ${$allCorners.value}px ${$style.value} ${this.value};\n-o-border-radius: ${$allCorners.value}px ${$style.value} ${this.value};\nborder-radius: ${$allCorners.value}px ${$style.value} ${this.value};\n`;
+            });
+            $style.addEventListener('change',function(e){
+                $outputBlock.style.borderStyle = this.value ;
+               
+            $outputcode.value = `-webkit-border-radius: ${$allCorners.value}px ${this.value} ${$color.value};\n-moz-border-radius: ${$allCorners.value}px ${this.value} ${$color.value};\n-o-border-radius: ${$allCorners.value}px ${this.value} ${$color.value};\nborder-radius: ${$allCorners.value}px ${this.value} ${$color.value};`;
+            });
+
+            $rgbcolor.addEventListener('input',function(){
+                $outputBlock.style.borderColor = this.value ;
+                
+               
+            $outputcode.value = `-webkit-border-radius: ${$allCorners.value}px ${$style.value} ${this.value};\n-moz-border-radius: ${$allCorners.value}px ${$style.value} ${this.value};\n-o-border-radius: ${$allCorners.value}px ${$style.value} ${this.value};\nborder-radius: ${$allCorners.value}px ${$style.value} ${this.value};\n`;
+            });
+   </script>
+</body>
+</html>

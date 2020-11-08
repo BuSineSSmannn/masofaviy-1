@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body{
+    background-color: pink;
+}
+label{
+    min-width:200px;
+    max-width: 250px;
+    /* width: 180px; */
+    height: 30px;
+    display: inline-block;
+}
+.block1{
+    width: 50%;
+    height: 50vh;
+    max-width: 600px;
+    min-height: 100px;
+
+}
+img{
+    width: 200px;
+}

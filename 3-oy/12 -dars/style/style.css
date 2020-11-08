@@ -1,0 +1,5 @@
+@charset "UTF-8";
+@import 'normal.css';
+body{
+    background-color: pink;
+}

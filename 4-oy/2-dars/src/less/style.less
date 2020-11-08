@@ -1,0 +1,25 @@
+
+@import (inline) 'normalize.css';
+@import (less) '__vars';
+@import (less) '__mixin';
+@import (less) 'body';
+@import (less) '__loop';
+
+@mycolor:red;
+
+
+.vot{
+    color:@yellow;
+    width: range(1, 10, 2);
+}
+.button2{
+    background-color: @mycolor;
+    &:hover{
+        background-color: greyscale(@mycolor,20%);
+        cursor: pointer;
+    }
+}
+
+
+
+

@@ -1,0 +1,111 @@
+div,span,img{
+    border:1px solid black;
+}
+.mydiv1{
+    display: block;
+    width: 200px;
+    height: 20px;
+    border:1px solid red;
+}
+.mydiv2{
+    display: inline;
+    /**
+     * width
+     * height
+     * margin-top,margin-bottom
+     * float
+     * bularga stil olmaydi
+     */
+    border:1px solid yellow;
+
+}
+
+.mydiv3{
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    border:1px solid black;
+}
+
+menu{
+    width: 100%;
+    margin:0 auto;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: burlywood;
+}
+menu li{
+
+    display: inline-block;
+    padding-left: 50px;
+}
+
+
+menu li:hover{
+    color:red;
+    background-color: cadetblue;
+    cursor:wait;
+}
+
+menu li:active{
+    color: yellow;
+}
+
+input:focus{
+    color:red;
+}
+
+a:visited{
+    color:blueviolet;
+}
+a:link{
+    color:green;
+}
+div:target{
+    background-color: red;
+}
+#boshiga{
+    margin-top:50px;
+}
+#boshiga::before{
+    content: 'Masofaviy talim';
+    display: block;
+}
+#boshiga::after{
+    content: 'Lorem LOrem LOREM Lorem LOrem LOREM Lorem LOrem LOREM Lorem LOrem LOREMLorem LOrem LOREM Lorem LOrem LOREM Lorem LOrem LOREM Lorem LOrem LOREM';
+    display: block;
+    line-height: 50px;
+}
+.float1,
+.float2,
+.float3{
+    width: 200px;
+    height: 20px;
+}
+.float1{
+    background-color: red;
+    float: right;
+}
+.float2{
+    background-color: green;
+    float: right;
+
+}
+.float3{
+    background-color: blue;
+    float: right;
+}
+footer::before{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+menu li:nth-child(2){
+    color:red;
+}
+
+
+
+

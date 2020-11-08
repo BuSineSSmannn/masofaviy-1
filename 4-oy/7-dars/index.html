@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <style>
+         .container{
+         /* padding:0; */
+         box-sizing: border-box;
+         border:1px solid red;
+         }
+         /*        
+         [class^='col']{
+         background-color: silver;
+         border:1px solid black;
+         } */
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+      <div class="row">
+         <div class="col-4">sdsad</div>
+      </div>
+      <div class="alert alert-primary" role="alert">
+         A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+         Пожалуйста для чтение этого поста  <a href="#" class="alert-link">an example link</a> вы должны быт авторизованны
+      </div>
+      <div class="alert alert-success" role="alert">
+         <a class="alert-heading">Well done!</a>
+         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+         <hr>
+         <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+         <strong>Вы успешно зарегистрировались</strong> 
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+         </button>
+      </div>
+      <button type="button" class="btn btn-link">
+      <a href="https://google.com">Google</a>
+      </button>
+      <button type="button" class="btn btn-outline-dark rounded">Cart</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cardmodal">
+      Cart
+      </button>
+      <button type="button" class="ml-5 btn btn-danger cartjs">
+      Open with js 
+      </button>
+      <!-- Modal -->
+      <!--  -->
+      <div class="modal fade" id="cardmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">x</span>
+                  </button>
+               </div>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-6">
+                     <div class="card" >
+                        <img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Card title</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6">
+                     <div class="card" >
+                        <img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Card title</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" >Save changes</button>
+            </div>
+         </div>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+         <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+         </li>
+         <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+         </li>
+         <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+         </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">1дўкуь  </div>
+         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2 қв қв қв </div>
+         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3 фқв фқв қв</div>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="https://akbarov.uz/yii2images/images/image-by-item-and-alias?item=Product1&dirtyAlias=8386a28d0b-1_268x249.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="https://akbarov.uz/yii2images/images/image-by-item-and-alias?item=Product1&dirtyAlias=8386a28d0b-1_268x249.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="https://akbarov.uz/yii2images/images/image-by-item-and-alias?item=Product1&dirtyAlias=8386a28d0b-1_268x249.jpg" class="d-block w-100" alt="...">
+            </div>
+         </div>
+         <a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+         <span class="sr-only ">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+         </a>
+      </div>
+      <form class="needs-validation" novalidate action="https://google.com">
+         <div class="form-row">
+            <div class="col-md-6 mb-3">
+               <label for="validationCustom01">First name</label>
+               <input type="text" class="form-control" id="validationCustom01" value="Jayson" required>
+               <div class="valid-feedback">
+                  Okay okay
+               </div>
+
+               <div class="invalid-feedback">
+                First name required
+             </div>
+            </div>
+
+
+            <div class="col-md-6 mb-3">
+               <label for="validationCustom02">Last name</label>
+               <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+               <div class="valid-feedback">
+                  Looks good!
+               </div>
+               <div class="invalid-feedback">
+                Las ntame required
+             </div>
+            </div>
+
+
+         </div>
+
+         
+         <div class="form-row">
+
+            <div class="col-md-6 mb-3">
+               <label for="validationCustom03">City</label>
+               <input type="text" class="form-control" id="validationCustom03" required>
+               <div class="invalid-feedback">
+                  Please provide a valid city.
+               </div>
+            </div>
+
+
+            <div class="col-md-3 mb-3">
+               <label for="validationCustom04">State</label>
+               <select class="custom-select" id="validationCustom04" required>
+                  <option selected disabled value="">1</option>
+                  <option>2</option>
+               </select>
+               <div class="invalid-feedback">
+                  Please select a valid state.
+               </div>
+            </div>
+            <div class="col-md-3 mb-3">
+               <label for="validationCustom05">Zip</label>
+               <input type="text" class="form-control" id="validationCustom05" required>
+               <div class="invalid-feedback">
+                  Please provide a valid zip.
+               </div>
+            </div>
+         </div>
+         <div class="form-group">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+               <label class="form-check-label" for="invalidCheck">
+               Agree to terms and conditions
+               </label>
+               <div class="invalid-feedback">
+                  You must agree before submitting.
+               </div>
+            </div>
+         </div>
+         <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+
+
+	        </div>
+
+     
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                console.log(form);
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+
+                
+
+
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        
+
+
+         $('.cartjs').on('click',function(){
+             $('#cardmodal').modal({
+                backdrop:'static',
+                keyboard:false,
+                focus:false
+             });
+         });
+         
+             $('#cardmodal').on('hide.bs.modal', function (e) {
+             alert('До закрытие');
+           });
+           
+           $('#cardmodal').on('hidden.bs.modal', function (e) {
+             alert('После закрытие');
+           });
+           $('#cardmodal').on('show.bs.modal', function (e) {
+             alert('До открытие');
+           });
+           $('#cardmodal').on('shown.bs.modal', function (e) {
+             alert('После открытие');
+           });
+         
+           $('#cardmodal').on('hidePrevented.bs.modal', function (e) {
+           alert('Static');
+         });
+         
+         
+      </script>
+   </body>
+</html>

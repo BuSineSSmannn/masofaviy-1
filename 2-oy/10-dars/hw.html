@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function category(name, count = 5) {
+    let cn = prompt(`${name} - Categoriyani yozing`);
+    console.group(cn);
+
+    for (let i = 1; i <= count; i++) {
+        pro = prompt(name + ` uchun ${i}- mahsulotni kiriting:`);
+        console.log(`${i} - ` + pro);
+    }
+    console.groupEnd(cn);
+}
+
+
+for (let i = 1; i <= 5; i++) {
+    category(i);
+}
+      
+      
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@mixin mymixin {
+    background-color: red;
+    color:yellow;   
+    font-size: 50px;
+}
+@mixin test{
+    @include mymixin;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    left:-9999999px;
+    top:-999999px;
+}
+@mixin  link-color {
+    a{
+        color:red;
+        background-color: orange;
+    }
+    a:hover{
+        color:yellow;
+    }
+}
+
+@mixin rounded($r,$border:1px solid black) {
+    border-radius: $r;
+    border:$border; 
+}
+
+@mixin shadow ($args...){
+    box-shadow: $args;
+}
+
+@mixin  apply-li($color) {
+    li a{
+        @content;
+        background-color: $color;
+    }
+}
+
+@mixin google-font-load($name) {
+        @import url("https://fonts.googleapis.com/css?family=#{$name}");
+}

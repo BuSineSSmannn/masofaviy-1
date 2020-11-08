@@ -1,0 +1,11 @@
+npm install less
+npm i -g less
+lessc file.less file.css
+Set-ExecutionPolicy RemoteSigned //no requaired
+node compiler 
+
+npm init
+npm i --save-dev gulp
+npm i --save-dev gulp-less gulp-concat gulp-autoprefixer gulp-sourcemaps gulp-clean-css browser-sync
+npm i -g gulp
+gulp

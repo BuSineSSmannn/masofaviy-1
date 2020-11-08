@@ -1,0 +1,18 @@
+@color:red;
+body{
+    background-color: @color;
+}
+div{
+    color:@color;
+    background: red;
+    font-size: 15px;
+}
+a{
+    &:hover{
+        &:extend(div);
+    }
+    &:active{
+        &:extend(div);
+        cursor:pointer;
+    }
+}

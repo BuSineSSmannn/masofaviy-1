@@ -1,0 +1,105 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-flow: row space-evenly; */
+    align-items: baseline;
+    border:1px solid red;
+    height: 200px;
+
+}
+
+.row div:first-child{
+    align-self: flex-end;
+    flex-shrink: 5;
+}
+
+.row div:last-child{
+    align-self: center;
+    flex-shrink: 3;
+}
+.my5{
+    align-self: stretch;
+}
+.row div{
+    width: 100px;
+    border:1px solid #000;
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin:0 auto;
+    align-items: stretch;
+    background-color: pink;
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+   
+    /* flex-flow: flex-direction flex-warp */
+
+}
+
+.news div{
+    border:1px solid red;
+    /* flex-basis: 300px; width:300px; */
+
+    flex: 0 1 300px;
+}
+
+.one{
+    order: 1;
+    /* flex-grow: 4; */
+}
+.two{
+    order: 2;
+    /* flex-grow: 2; */
+
+}
+.three{
+    order: 3;
+    /* flex-grow: 1; */
+
+}
+
+
+
+    
+    
+    @media screen and (max-width:922px){
+    .news{
+        justify-content: center;
+
+    }
+    .news div:not(:last-child){
+        margin-left:50px;
+        flex-grow: 1;
+
+    }
+
+}
+
+@media screen and (max-width:670px){
+
+    .news div:not(:last-child){
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:615px){
+    .news div:not(:last-child){
+        flex-grow: 0;
+    }
+
+
+
+}
+
+
+
+
